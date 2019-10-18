@@ -47,7 +47,7 @@ http.createServer(function(req,res){
         // 显示后台文章列表页
         showPage(res,"list.html");
     }else if(pathName == '/showlist'){
-        // 
+        // 后台文章基本内容
         res.writeHead(200,{"Content-Type":"text/plain;charset=utf-8"});
         res.write(JSON.stringify(chapterList));
         res.end();
