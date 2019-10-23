@@ -179,9 +179,7 @@
     function showList() {
         window.location = "http://localhost:8083/listmanager";
     }
-    function addChapter() {
-        window.location = "http://localhost:8083/addChapter";
-    }
+
     $("#sub").click(function() {
         $.post("http://localhost:8083/add", {"title": $("#title").val(), "content": $("#ct").html()}, function(data) {
             window.location = "http://localhost:8083/listmanager";

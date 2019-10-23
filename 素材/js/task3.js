@@ -73,7 +73,7 @@ function showImg(res,pathName){
     var imgPath = path.join(__dirname,'..');
     var imgSrc = path.join(imgPath,pathName);
     var imgContent = fs.readFileSync(imgSrc);
-    res.writeHead(200,{"Content-Type":"image/png"});
+    res.writeHead(200,{"Content-Type":"image/png"});            
     res.end(imgContent); 
 }
 function showCss(res,pathName){
